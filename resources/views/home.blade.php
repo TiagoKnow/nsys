@@ -180,6 +180,7 @@
                     <span class="description-text">TOTAL PROFIT</span>
                   </div>
                   <!-- /.description-block -->
+
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 col-xs-6">
@@ -196,18 +197,15 @@
             <!-- /.box-footer -->
           </div>
 
-
-
         {!! Charts::styles() !!}
         <!-- Main Application (Can be VueJS or other JS framework) -->
         <div class="box">
-            <div class="box-header with-border">
-                <div class="app">
-                    {!! $chart->html() !!}
-                </div>
+          <div class="box-header with-border">
+            <div class="app">
+              {!! $chart->html() !!}
             </div>
+          </div>
         </div>
-
 
         <!-- End Of Main Application -->
         {!! Charts::scripts() !!}

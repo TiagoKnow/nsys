@@ -25,8 +25,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-      //var_dump($vendas);
-
         $mesext = "";
         $anoext = "";
 
@@ -67,13 +65,9 @@ class HomeController extends Controller
                 ->pluck('idVenda')
             ;
 
-            $totalOs = $vendas->count();
+            $totalVendas = $vendas->count();
 
-            $array3[] = $totalOs;
-
-            foreach($vendas as $venda){
-                //$var = $venda->observacoes;
-            }
+            $array3[] = $totalVendas;
         }
 
         //var_dump($array3);
@@ -91,12 +85,11 @@ class HomeController extends Controller
 
             ->dataset('Total de vendas',   $array3)
 
-           // ->dataset('Total de notas processadas', [11,2,12,4,5,20,7,10,9,10,11,12])
-
+            ->elementLabel('Quantidade')
 
             // Setup what the values mean
             ->labels($array1);
 
-        return view('home', ['chart' => $chart], ['chart2' => $chart]);
+        return view('home', ['chart' => $chart]);
     }
 }

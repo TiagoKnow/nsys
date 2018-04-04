@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Nsys Produtos')
+@section('title', 'Nsys OS')
 
 @section('content_header')
     <h1>Lista de ordens de serviço</h1>
@@ -9,14 +9,47 @@
 @section('content')
 <section class="content-header">
   <h1>
-    Consulta
-    <small>Relação simplificada</small>
+    OS
+    <small>Dashboard</small>
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Início</a></li>
     <li><a href="#">Produção</a></li>
-    <li class="active">Listagem de ordens de serviço </li>
+    <li class="active">Ordens de serviço - OS</li>
   </ol>
+</section>
+
+<section class="content">
+{!! Charts::styles() !!}
+<!-- Main Application (Can be VueJS or other JS framework) -->
+<div class="box">
+  <div class="box-header with-border">
+    <div class="app">
+      {!! $chart->html() !!}
+    </div>
+    <div class="col-sm-3 col-xs-10">
+      <div class="box-header with-border">
+        <div class="app">
+          {!! $chartpie->html() !!}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Main Application (Can be VueJS or other JS framework) -->
+
+
+  <!-- End Of Main Application -->
+  {!! Charts::scripts() !!}
+  {!! $chart->script() !!}
+
+{!! Charts::styles() !!}
+
+
+  <!-- End Of Main Application -->
+  {!! Charts::scripts() !!}
+  {!! $chartpie->script() !!}
 </section>
 
 <section class="content">
@@ -27,7 +60,7 @@
           <a class="btn btn-primary navbar-btn"><i class="fa fa-plus"></i></a>
         </div>
 
-        <div class="box-body table-responsive">
+        <div class="box-body table-responsive no-padding">
           <table class="table table-condensed table-hover" id="dataTable">
             <tr>
               <th>Cod OS</th>

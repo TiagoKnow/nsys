@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Os;
 
-class DatabaseSeeder extends Seeder
+class OsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(OsSeeder::class);
+        factory(Os::class, 1500)->create();
     }
 }

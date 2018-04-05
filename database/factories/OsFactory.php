@@ -57,7 +57,7 @@ $factory->define(App\Os::class, function (Faker $faker) {
         'codigoGrupoAlterou'=> $faker->numberBetween(0,2),
         'codigoEmpresaAlterou'=> $faker->numberBetween(0,2),
         'horaCadastro' => '00:00:01',
-        'codigoCancelamento' => '00:00:01',
+        'codigoCancelamento' => 0,
         'detalhesCancelamento' => 'teste222',
         'dataCancelou' =>$faker->date('y-m-d'),
         'horaCancelou' => '00:00:01',

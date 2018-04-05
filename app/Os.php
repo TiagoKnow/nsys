@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Os extends Model
 {
     protected $table = 'tb_os';
+    public $timestamps = false;
 
     public function mesesProcessamento()
     {

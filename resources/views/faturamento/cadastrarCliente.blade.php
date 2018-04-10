@@ -3,14 +3,14 @@
 @section('title', 'Nsys web')
 
 @section('content_header')
-    <h1>Lista de clientes</h1>
+    <h1>Cadastro de clientes</h1>
 @stop
 
 @section('content')
 <section class="content-header">
   <div class="box box-warning">
-          <div class="box-header with-border">
-            <h3 class="box-title">General Elements</h3>
+    <div class="box-header with-border">
+            <h3 class="box-title">Dados cadastrais</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">

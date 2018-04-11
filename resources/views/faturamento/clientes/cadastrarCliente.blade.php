@@ -17,8 +17,16 @@
             <form role="form">
               <!-- text input -->
               <div class="form-group">
-                <label>Text</label>
-                <input type="text" class="form-control" placeholder="Enter ...">
+                <label>Tipo de cadastro</label>
+                <select class="form-control">
+                  <option>Pessoa Física</option>
+                  <option>Pessoa Jurídica</option>
+                </select>
+                <label>Nome</label>
+                <input type="text" class="form-control" placeholder="Seu nome ...">
+                <label>Contato</label>
+                <input type="text" class="form-control" placeholder="Seu primeiro nome ou razão social ...">
+
               </div>
               <div class="form-group">
                 <label>Text Disabled</label>

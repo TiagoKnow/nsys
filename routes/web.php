@@ -28,9 +28,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //Faturamento -> Rota de clientes
-Route::get('/faturamento/listar', ['as' => 'user.consultar', 'uses' => 'FaturamentoController@listarClientes']);
-Route::get('/faturamento/cadastrarCliente', ['as' => 'user.cadastrar', 'uses' => 'FaturamentoController@cadastrarCliente']);
-Route::post('/faturamento/salvar', ['as' => 'user.salvar', 'uses' => 'FaturamentoController@edit']);
+Route::get('/faturamento/clientes/listar', ['as' => 'clientes.salvar', 'uses' => 'FaturamentoController@listarClientes']);
+Route::get('/faturamento/clientes/cadastrarCliente', ['as' => 'clientes.cadastrar', 'uses' => 'FaturamentoController@cadastrarCliente']);
+Route::post('/faturamento/clientes/salvar', ['as' => 'clientes.salvar', 'uses' => 'FaturamentoController@edit']);
 
 //Vendas -> Rota de produtos
 Route::get('/vendas/listar', ['as' => 'user.consultar', 'uses' => 'ProdutoController@index']);

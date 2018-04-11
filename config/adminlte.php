@@ -150,11 +150,11 @@ return [
                                     'submenu' => [
                                         [
                                             'text' => 'Cadastro',
-                                            'url'  => 'faturamento/cadastrarCliente',
+                                            'url'  => 'faturamento/clientes/cadastrarCliente',
                                         ],
                                         [
                                             'text' => 'Consulta',
-                                            'url'  => 'faturamento/listar',
+                                            'url'  => 'faturamento/clientes/listar',
                                         ],
                                     ],
                                 ],

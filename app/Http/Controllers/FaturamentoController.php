@@ -9,7 +9,7 @@ class FaturamentoController extends Controller
     public function listarClientes()
     {
       return view(
-          'faturamento.listar',
+          'faturamento.clientes.listar',
           [
               'clientes' => 'teste',
               'totalClientes' => 'teste',
@@ -20,7 +20,7 @@ class FaturamentoController extends Controller
     public function cadastrarCliente()
     {
       return view(
-          'faturamento.cadastrarCliente',
+          'faturamento.clientes.cadastrarCliente',
           [
               'clientes' => 'teste',
               'totalClientes' => 'teste',
